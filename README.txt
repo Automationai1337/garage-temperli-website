@@ -1,0 +1,1 @@
+Garage Temperli V4 – echte responsive Website mit HTML/CSS/JS, echten Bildern und Demo-KI-Widget.

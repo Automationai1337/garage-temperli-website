@@ -3,32 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07111f">
+<meta name="theme-color" content="#071526">
 <title>Garage Temperli Horgen | Service, Pneus & Reparaturen</title>
-<meta name="description" content="Garage Temperli in Horgen – Service, Wartung, Pneus, Reparaturen, Diagnose und Klimaservice.">
+<meta name="description" content="Garage Temperli in Horgen – persönlicher Service, Pneus, Reparaturen, Diagnose und Klimaservice.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
+<header class="header">
   <div class="wrap nav">
-    <a href="#home" class="brand" aria-label="Garage Temperli">
-      <span class="brand-symbol"><i></i><i></i></span>
-      <span class="brand-text">GARAGE<span>TEMPERLI</span></span>
+    <a class="logo" href="#home" aria-label="Garage Temperli">
+      <span class="logo-icon"><i></i><i></i></span>
+      <span class="logo-word">GARAGE<span>TEMPERLI</span></span>
     </a>
-    <button class="menu" aria-label="Menü öffnen">☰</button>
+    <button class="menu" aria-label="Menü öffnen" aria-expanded="false">☰</button>
     <nav>
       <a class="active" href="#home">Home</a>
-      <a href="#leistungen">Leistungen</a>
+      <a href="#services">Leistungen</a>
       <a href="#pneus">Pneus & Räder</a>
       <a href="#about">Über uns</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#contact">Kontakt</a>
     </nav>
-    <div class="nav-actions">
-      <a class="phone" href="tel:+41447254382"><span>☎</span><b>044 725 43 82</b></a>
-      <a class="btn primary small" href="#kontakt">Termin anfragen</a>
+    <div class="header-actions">
+      <a class="phone" href="tel:+41447254382">☎ 044 725 43 82</a>
+      <a class="btn primary compact" href="#contact">Termin anfragen</a>
     </div>
   </div>
 </header>
@@ -36,104 +36,91 @@
 <main>
 <section class="hero" id="home">
   <div class="hero-bg"></div>
-  <div class="hero-shade"></div>
-  <div class="wrap hero-grid">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-inner">
     <div class="hero-copy reveal">
       <p class="eyebrow">Garage Temperli · Horgen</p>
       <h1>Ihr Auto.<br>Unsere Leidenschaft.<br><span>Ihre Sicherheit.</span></h1>
-      <p>Professioneller Service, persönliche Beratung und hohe Qualität – direkt bei Garage Temperli in Horgen.</p>
-      <div class="hero-buttons">
-        <a class="btn primary" href="#kontakt">▣ Termin anfragen</a>
-        <a class="btn outline" href="#leistungen">Mehr über uns →</a>
+      <p class="lead">Professioneller Service, persönliche Beratung und hohe Qualität – direkt bei Garage Temperli in Horgen.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contact">Termin anfragen</a>
+        <a class="btn ghost" href="#services">Leistungen ansehen</a>
       </div>
+      <div class="mini-trust"><span>✓ Persönlich</span><span>✓ Transparent</span><span>✓ Mehrmarken-Service</span></div>
     </div>
   </div>
 </section>
 
-<section class="info-bar">
+<section class="info">
   <div class="wrap info-grid">
-    <a href="https://maps.google.com/?q=Seestrasse+287+8810+Horgen" target="_blank"><span class="icon">⌖</span><span><b>Seestrasse 287</b><small>8810 Horgen</small></span></a>
-    <a href="tel:+41447254382"><span class="icon">☎</span><span><b>044 725 43 82</b><small>Wir sind für Sie da</small></span></a>
-    <a href="mailto:info@garagetemperli.ch"><span class="icon">✉</span><span><b>info@garagetemperli.ch</b><small>E-Mail schreiben</small></span></a>
-    <div><span class="icon">◷</span><span><b>Mo – Fr</b><small>08:00–12:00 / 13:30–18:00</small></span></div>
+    <a href="https://maps.google.com/?q=Seestrasse+287+8810+Horgen" target="_blank" rel="noopener"><b>⌖</b><span><strong>Seestrasse 287</strong><small>8810 Horgen</small></span></a>
+    <a href="tel:+41447254382"><b>☎</b><span><strong>044 725 43 82</strong><small>Wir sind für Sie da</small></span></a>
+    <a href="mailto:info@garagetemperli.ch"><b>✉</b><span><strong>info@garagetemperli.ch</strong><small>E-Mail schreiben</small></span></a>
+    <div><b>◷</b><span><strong>Mo – Fr</strong><small>08:00–12:00 / 13:30–18:00</small></span></div>
   </div>
 </section>
 
-<section class="section" id="leistungen">
+<section class="section" id="services">
   <div class="wrap">
-    <div class="section-heading reveal">
-      <div>
-        <p class="eyebrow blue">Unsere Leistungen</p>
-        <h2>Alles für Ihr Fahrzeug</h2>
-      </div>
+    <div class="section-head reveal">
+      <div><p class="eyebrow blue">Unsere Leistungen</p><h2>Alles für Ihr Fahrzeug</h2></div>
       <p>Von der Wartung bis zum Reifenwechsel – umfassender Service, klare Beratung und persönlicher Kontakt.</p>
     </div>
-
-    <div class="services">
-      <article class="service-card reveal">
-        <div class="service-mark">🔧</div>
-        <div><h3>Service & Wartung</h3><p>Fachgerechter Service nach Herstellervorgaben für alle Marken.</p><a href="#kontakt">Mehr erfahren →</a></div>
-      </article>
-      <article class="service-card reveal" id="pneus">
-        <div class="service-mark ring"></div>
-        <div><h3>Pneus & Räder</h3><p>Markenreifen, Räder, Montage, Kontrolle und Einlagerung.</p><a href="#kontakt">Mehr erfahren →</a></div>
-      </article>
-      <article class="service-card reveal">
-        <div class="service-mark">🚗</div>
-        <div><h3>Reparaturen</h3><p>Mechanik, Elektronik und Diagnose – zuverlässig und transparent.</p><a href="#kontakt">Mehr erfahren →</a></div>
-      </article>
-      <article class="service-card reveal">
-        <div class="service-mark">❄</div>
-        <div><h3>Klimaservice</h3><p>Prüfung, Desinfektion und Service für frische Luft und klare Sicht.</p><a href="#kontakt">Mehr erfahren →</a></div>
-      </article>
+    <div class="cards">
+      <article class="card reveal"><div class="ico">🔧</div><h3>Service & Wartung</h3><p>Fachgerechter Service nach Herstellervorgaben für alle Marken.</p><a href="#contact">Mehr erfahren →</a></article>
+      <article class="card reveal" id="pneus"><div class="ico">◉</div><h3>Pneus & Räder</h3><p>Reifenwechsel, Montage, Kontrolle, Beratung und Einlagerung.</p><a href="#contact">Termin anfragen →</a></article>
+      <article class="card reveal"><div class="ico">⚙</div><h3>Reparaturen & Diagnose</h3><p>Mechanik, Elektronik und moderne Fehlersuche – zuverlässig und transparent.</p><a href="#contact">Problem schildern →</a></article>
+      <article class="card reveal"><div class="ico">❄</div><h3>Klimaservice</h3><p>Prüfung, Desinfektion und Service für frische Luft und klare Sicht.</p><a href="#contact">Klimaservice buchen →</a></article>
     </div>
   </div>
 </section>
 
-<section class="trust" id="about">
-  <div class="trust-photo"></div>
-  <div class="trust-gradient"></div>
-  <div class="wrap trust-grid">
-    <div class="trust-copy reveal">
+<section class="about" id="about">
+  <div class="about-photo"></div><div class="about-overlay"></div>
+  <div class="wrap about-inner">
+    <div class="about-copy reveal">
       <p class="eyebrow blue">Garage Temperli</p>
       <h2>Vertrauen durch <span>Qualität</span></h2>
-      <p>Ein echter Betrieb in Horgen. Persönliche Ansprechpartner, moderne Technik und nachvollziehbare Empfehlungen.</p>
+      <p>Ein echter Betrieb in Horgen. Persönliche Ansprechpartner, moderne Technik und nachvollziehbare Empfehlungen statt unnötigem Fachjargon.</p>
       <div class="checks">
-        <span>✓ Erfahrenes und zertifiziertes Team</span>
+        <span>✓ Erfahrenes Team</span>
         <span>✓ Moderne Diagnosetechnik</span>
-        <span>✓ Transparente Preise</span>
-        <span>✓ Persönlicher und ehrlicher Service</span>
+        <span>✓ Transparente Kommunikation</span>
+        <span>✓ Persönlicher Service</span>
       </div>
-      <a class="btn primary" href="#kontakt">Mehr über uns</a>
+      <a class="btn primary" href="#contact">Kontakt aufnehmen</a>
     </div>
   </div>
 </section>
 
-<section class="bottom-cta">
-  <div class="wrap bottom-grid reveal">
-    <div><h2>Ihr Auto in besten Händen</h2><p>Ob Service, Reparatur oder neue Pneus – wir kümmern uns darum.</p></div>
-    <div class="bottom-actions">
-      <a class="btn primary" href="#kontakt">Termin anfragen</a>
-      <a class="btn light" href="tel:+41447254382">☎ 044 725 43 82</a>
-      <a class="btn light" target="_blank" href="https://maps.google.com/?q=Seestrasse+287+8810+Horgen">⌖ Standort</a>
+<section class="section why">
+  <div class="wrap why-grid">
+    <div class="reveal"><p class="eyebrow blue">Warum Temperli</p><h2>Keine anonyme Werkstatt.</h2></div>
+    <div class="why-cards reveal">
+      <div><strong>Horgen</strong><span>Direkt an der Seestrasse</span></div>
+      <div><strong>Direkt</strong><span>Telefonisch erreichbar</span></div>
+      <div><strong>Persönlich</strong><span>Beratung vor Ort</span></div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="kontakt">
+<section class="cta">
+  <div class="wrap cta-grid reveal">
+    <div><p class="eyebrow">Ihr Auto in besten Händen</p><h2>Was können wir für Sie tun?</h2><p>Service, Reparatur, Reifen oder eine kurze Frage – melden Sie sich direkt.</p></div>
+    <div class="cta-actions"><a class="btn primary" href="#contact">Termin anfragen</a><a class="btn light" href="tel:+41447254382">044 725 43 82</a></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-copy reveal">
-      <p class="eyebrow blue">Kontakt</p>
-      <h2>Termin oder Frage?</h2>
-      <p>Schreiben Sie uns kurz Fahrzeug, Anliegen und gewünschtes Zeitfenster. Wir melden uns persönlich.</p>
-      <a class="contact-phone" href="tel:+41447254382">044 725 43 82</a>
-      <p class="muted">Seestrasse 287 · 8810 Horgen</p>
+      <p class="eyebrow blue">Kontakt</p><h2>Termin oder Frage?</h2>
+      <p>Schreiben Sie uns kurz Fahrzeug, Anliegen und gewünschtes Zeitfenster. Wir melden uns persönlich zurück.</p>
+      <a class="big-phone" href="tel:+41447254382">044 725 43 82</a>
+      <span>Seestrasse 287 · 8810 Horgen</span>
     </div>
-    <form class="contact-form reveal" id="contactForm">
-      <div class="two">
-        <label>Name<input required name="name"></label>
-        <label>Telefon<input name="phone"></label>
-      </div>
+    <form class="form reveal" id="contactForm">
+      <div class="two"><label>Name<input required name="name"></label><label>Telefon<input name="phone"></label></div>
       <label>E-Mail<input type="email" name="email"></label>
       <label>Fahrzeug / Anliegen<textarea rows="5" required name="message"></textarea></label>
       <button class="btn primary" type="submit">Anfrage senden</button>
@@ -145,21 +132,19 @@
 
 <footer>
   <div class="wrap footer">
-    <a class="brand" href="#home"><span class="brand-symbol"><i></i><i></i></span><span class="brand-text">GARAGE<span>TEMPERLI</span></span></a>
+    <a class="logo" href="#home"><span class="logo-icon"><i></i><i></i></span><span class="logo-word">GARAGE<span>TEMPERLI</span></span></a>
     <p>© 2026 Garage Temperli · Seestrasse 287 · 8810 Horgen</p>
-    <div><a href="#kontakt">Kontakt</a><a href="#">Datenschutz</a><a href="#">Impressum</a></div>
+    <div><a href="#contact">Kontakt</a><a href="#">Datenschutz</a><a href="#">Impressum</a></div>
   </div>
 </footer>
 
 <button class="chat-fab"><span class="avatar">GT</span><span><b>Temperli Assistent</b><small>● Online</small></span></button>
-<aside class="chat">
-  <header><div class="chat-title"><span class="avatar">GT</span><span><b>Temperli Assistent</b><small>● Online · Demo</small></span></div><button class="chat-close">×</button></header>
+<aside class="chat" aria-hidden="true">
+  <header><div><span class="avatar">GT</span><span><b>Temperli Assistent</b><small>● Online · Demo</small></span></div><button class="chat-close">×</button></header>
   <div class="messages"><div class="bubble bot">Grüezi 👋 Wie kann ich helfen? Fragen Sie mich zu Service, Reifen, Öffnungszeiten oder einem Termin.</div></div>
   <div class="chips"><button>Termin</button><button>Reifenwechsel</button><button>Öffnungszeiten</button><button>Service</button></div>
   <form class="chat-form"><input placeholder="Ihre Nachricht…"><button>➤</button></form>
-  <div class="demo-note">Demo ohne API-Kosten. Später wird hier euer echtes KI-Backend angeschlossen.</div>
+  <div class="demo-note">Demo ohne API-Kosten. Später wird hier euer echtes KI-Backend verbunden.</div>
 </aside>
-
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
