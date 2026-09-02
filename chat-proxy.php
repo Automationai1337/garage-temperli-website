@@ -7,8 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   echo json_encode(['error' => 'method_not_allowed']);
   exit;
 }
-$raw = file_get_contents('php://input');
-$data = json_decode($raw ?: '', true);
+$data = json_decode(file_get_contents('php://input') ?: '', true);
 if (!is_array($data)) {
   http_response_code(400);
   echo json_encode(['error' => 'invalid_json']);
@@ -20,11 +19,13 @@ if ($message === '' || mb_strlen($message) > 2000) {
   echo json_encode(['error' => 'invalid_message']);
   exit;
 }
+$conversationId = (string)($data['conversationId'] ?? $data['sessionId'] ?? '');
+$visitorId = (string)($data['visitorId'] ?? $data['sessionId'] ?? '');
 $payload = [
   'message' => $message,
-  'conversationId' => (string)($data['conversationId'] ?? ''),
-  'visitorId' => (string)($data['visitorId'] ?? ''),
-  'messageId' => (string)($data['messageId'] ?? ''),
+  'conversationId' => $conversationId,
+  'visitorId' => $visitorId,
+  'messageId' => (string)($data['messageId'] ?? uniqid('web_', true)),
   'history' => is_array($data['history'] ?? null) ? array_slice($data['history'], -20) : []
 ];
 $ch = curl_init('https://botsgenerator.app.n8n.cloud/webhook/werkstatt-chat');
@@ -38,7 +39,6 @@ curl_setopt_array($ch, [
 ]);
 $body = curl_exec($ch);
 $status = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
-$error = curl_error($ch);
 curl_close($ch);
 if ($body === false || $status < 200 || $status >= 300) {
   http_response_code(502);
